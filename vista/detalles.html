@@ -1,14 +1,11 @@
 <div class="col-sm-8">
   
-    <h1> Ver datos de {{anuncio.numero-de-registro}}</h1>
+    <h1> Ver datos de {{anuncios.identificador}}</h1>
     
     
-    <label>Titulo</label>
-    <input type="text" ng-model="anuncio.titulo" class="form-control"> <br>
-    <label>URL</label>
-    <input type="text" ng-model="anuncio.url" class="form-control">
-
+    <label>{{anuncios.titulo}}</label>
+    <label>{{anuncios.url}}</label>
     
-    <button ng-click="guardarInfo()"> Guardar </button>
     
 </div>
+

@@ -18,8 +18,11 @@ miAppAngular.controller('inicio', function($scope , configuracionGlobal , $http 
     $http.get(configuracionGlobal.api_url1).success(function(respuesta) {
 	            localStorage.setItem('anuncios', JSON.stringify(respuesta));
 	            $scope.anuncios = respuesta.tablons.tablon;
-                console.log($scope.anuncios);
-                console.log($scope.anuncios[1].identificador);
+                $scope.titulo = $scope.anuncios[0].categorias.categoria[0].content;
+                //console.log($scope.anuncios);
+                //console.log($scope.anuncios[1].identificador);
+                //console.log($scope.titulo);
+
 
 
 	        });
