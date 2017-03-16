@@ -1,19 +1,19 @@
 <h1>Anuncios Ayto. Gijón</h1>
-<!--<div ng-hide="anuncios">
+<div ng-hide="anuncios">
     <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
     <span class="sr-only">Loading...</span>
-</div-->
+</div>
 
     <div class="col-sm-10">
+        <input type="text" ng-model="busqueda"  class="form-control" ><br>
         <p><small> Buscando: {{busqueda}}  </small></p>
-        <input type="text" ng-model="busqueda"  class="form-control" ><br> 
             
     </div>
-    <div class="col-sm-3" ng-repeat="anuncio in anuncios | filter: busqueda |limitTo: 50">
+    <div class="col-sm-3" ng-repeat="anuncio in anuncios">
             <div class="" ng-click="verDetalles(anuncio.id)">
                 <div class="content">
-                    <p>{{anuncio.numero-de-registro}} {{anuncio.organizacion-remitente}}<br>
-                       <small>{{anuncio.titulo}}</small></p>
+                    <p>{{anuncio.tablon.numero-de-registro}} {{anuncio.tablon.organizacion-remitente}}<br>
+                       <small>{{anuncio.tablon.titulo}}</small></p>
                 </div>
             </div>
     </div>
