@@ -1,4 +1,4 @@
-{"tablon": [
+{"tablons":{"tablon": [
     {
         "campos-adicionales": "",
         "categorias": {"categoria": [
@@ -1742,3 +1742,4 @@
         "url": "http://www.gijon.es/tablons/show/68482-a"
     }
 ]}
+}

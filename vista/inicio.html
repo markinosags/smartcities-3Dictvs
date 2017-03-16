@@ -12,8 +12,8 @@
     <div class="col-sm-3" ng-repeat="anuncio in anuncios">
             <div class="" ng-click="verDetalles(anuncio.id)">
                 <div class="content">
-                    <p>{{anuncio.tablon.numero-de-registro}} {{anuncio.tablon.organizacion-remitente}}<br>
-                       <small>{{anuncio.tablon.titulo}}</small></p>
+                    <p>{{anuncio.identificador}} {{anuncio.locale}}<br>
+                       <small>{{anuncio.titulo}}</small></p>
                 </div>
             </div>
     </div>
