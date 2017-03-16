@@ -24,7 +24,7 @@ miAppAngular.config( [ '$routeProvider' , function($routeProvider){
 
 miAppAngular.constant('configuracionGlobal' , {
  
-    nombreDelSitio:'Anuncios Ayo. Gijón',
+    nombreDelSitio:'Anuncios Ayto. Gijón',
     api_url1: 'data/anuncios.json',
         
 });
