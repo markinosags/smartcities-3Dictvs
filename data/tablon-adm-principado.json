@@ -1,0 +1,54 @@
+{"tablons": {"tablon": [
+    {
+        "campos-adicionales": "",
+        "categorias": {"categoria": [
+            {
+                "content": "Tablón Admón Principado",
+                "id": 526
+            },
+            {
+                "content": "Sede electrónica",
+                "id": 162
+            }
+        ]},
+        "descripcion": {},
+        "documento": "http://www.gijon.es/multimedia_objects/download?object_type=document&object_id=208443",
+        "identificador": 80029,
+        "locale": "es",
+        "numero-de-registro": 2017000094,
+        "organizacion-remitente": "Ente Público de Servicios Tributarios - Principado de Asturias",
+        "portales": {"portal": {
+            "content": "sedeelectronica.gijon.es",
+            "id": 45
+        }},
+        "send": "fecha-actualizacion2017-03-10 10:32:27 +0100",
+        "titulo": "Anuncio de expte. 2013EXP33045859, de venta mediante gestión y adjudicación directa de mitad indivisa de finca nombrada \"Llosa de la Fuente\", sita en Veranes, parroquia de Cenero.",
+        "url": "http://www.gijon.es/tablons/show/80029-anuncio-de-expte-2013exp33045859-de-venta-mediante-gestion-y-adjudicacion-directa-de-mitad-indivisa-de-finca-nombrada-llosa-de-la-fuente-sita-en-verane"
+    },
+    {
+        "campos-adicionales": "",
+        "categorias": {"categoria": [
+            {
+                "content": "Tablón Admón Principado",
+                "id": 526
+            },
+            {
+                "content": "Sede electrónica",
+                "id": 162
+            }
+        ]},
+        "descripcion": {},
+        "documento": "http://www.gijon.es/multimedia_objects/download?object_type=document&object_id=208161",
+        "identificador": 80018,
+        "locale": "es",
+        "numero-de-registro": 2017000083,
+        "organizacion-remitente": "Ente Público de Servicios Tributarios - Principado de Asturias",
+        "portales": {"portal": {
+            "content": "sedeelectronica.gijon.es",
+            "id": 45
+        }},
+        "send": "fecha-actualizacion2017-03-02 13:42:58 +0100",
+        "titulo": "Anuncio de expte. 2015EXP33002279, de venta mediante gestión y adjudicación directa de una mitad indivisa en nuda propiedad del departamento nº 8, vivienda o piso izquierda, sita en la planta 2ª de la casa nº 10, de la calle Severo Ochoa en Gijón.",
+        "url": "http://www.gijon.es/tablons/show/80018-anuncio-de-expte-2015exp33002279-de-venta-mediante-gestion-y-adjudicacion-directa-de-una-mitad-indivisa-en-nuda-propiedad-del-departamento-n-8-vivienda"
+    }
+]}}

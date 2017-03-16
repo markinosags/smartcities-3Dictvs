@@ -1,0 +1,26 @@
+{"tablons": {"tablon": {
+    "campos-adicionales": "",
+    "categorias": {"categoria": [
+        {
+            "content": "Tablón de Admón. de Justicia",
+            "id": 521
+        },
+        {
+            "content": "Sede electrónica",
+            "id": 162
+        }
+    ]},
+    "descripcion": {},
+    "documento": "http://www.gijon.es/multimedia_objects/download?object_type=document&object_id=205184",
+    "identificador": 79930,
+    "locale": "es",
+    "numero-de-registro": 2016000785,
+    "organizacion-remitente": "Audiencia Provincial de Oviedo - Presidencia",
+    "portales": {"portal": {
+        "content": "sedeelectronica.gijon.es",
+        "id": 45
+    }},
+    "send": "fecha-actualizacion2016-12-29 14:02:46 +0100",
+    "titulo": "Expte. gubernativo nº 60/16 (Ley del Jurado). Lista definitiva de los candidatos a jurados vecinos de Gijón (periodo vigencia años 2017 y 2018).",
+    "url": "http://www.gijon.es/tablons/show/79930-expte-gubernativo-n-60-16-ley-del-jurado-lista-definitiva-de-los-candidatos-a-jurados-vecinos-de-gijon-periodo-vigencia-anos-2017-y-2018"
+}}}
