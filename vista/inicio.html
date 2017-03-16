@@ -10,10 +10,10 @@
             
     </div>
     <div class="col-sm-3" ng-repeat="anuncio in anuncios">
-            <div class="" ng-click="verDetalles(anuncio.id)">
+            <div class="" ng-click="verDetalles(anuncio.portales.portal.id, anuncio.identificador)">
                 <div class="content">
-                    <p>{{anuncio.identificador}} {{anuncio.locale}}<br>
-                       <small>{{anuncio.titulo}}</small></p>
+                    <p>{{anuncio.identificador}} {{anuncio.locale}}</p>
+                      
                 </div>
             </div>
     </div>

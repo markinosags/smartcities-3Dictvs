@@ -18,14 +18,14 @@ miAppAngular.controller('inicio', function($scope , configuracionGlobal , $http 
     $http.get('data/anuncios.json').success(function(respuesta) {
 	            localStorage.setItem('anuncios', JSON.stringify(respuesta));
 	            $scope.anuncios = respuesta.tablons.tablon;
-                console.log($scope.anuncios);
-                console.log($scope.anuncios[1].identificador);
+                //console.log($scope.anuncios);
+              //  console.log($scope.anuncios[1].identificador);
 
 
 	        });
 
 
-    $scope.verDetalles = function(_anuncioId){
-        $location.path("/detalles/"+_anuncioId)
+    $scope.verDetalles = function(_anuncioId,){
+        $location.url("/detalles/"+_anuncioId);
     }
 });
