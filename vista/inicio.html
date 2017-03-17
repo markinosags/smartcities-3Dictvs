@@ -10,10 +10,10 @@
             
     </div>
     <div class="col-sm-3" ng-repeat="anuncio in anuncios | filter:busqueda">
-            <div class="" ng-click="verDetalles(anuncio.identificador)">
-                <div class="content">
-                    <p>{{anuncio.identificador}} {{anuncio.organizacion-remitente}}<br>
-                       <small>{{anuncio.titulo}}</small></p>
+            <div class="block" ng-click="verDetalles(anuncio.identificador)">
+                <div class="caption">
+                    <h1>{{anuncio.identificador}} {{anuncio.organizacion-remitente}}</h1><br>
+                       <p>{{anuncio.titulo}}</p>
                 </div>
             </div>
     </div>

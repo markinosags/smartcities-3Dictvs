@@ -36,7 +36,7 @@ miAppAngular.config( [ '$routeProvider' , function($routeProvider){
         controller: 'inicio'
     })
     .otherwise({        
-        redirectTo: '#/404'        
+        redirectTo: '/404'        
     })
     
 }]);
