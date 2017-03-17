@@ -26,6 +26,10 @@ miAppAngular.config( [ '$routeProvider' , function($routeProvider){
         templateUrl: 'vista/detalles.html',
         controller: 'detalles'  
     })
+    .when('/inicio', {
+        templateUrl: 'vista/inicio.html',
+        controller: 'inicio'  
+    })
    
     .when('/404', {
         templateUrl: 'vista/404.html',
