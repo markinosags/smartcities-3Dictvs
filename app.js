@@ -14,7 +14,7 @@ miAppAngular.config( [ '$routeProvider' , function($routeProvider){
         templateUrl: 'vista/servicios.html',
         controller: 'servicios'
     })
-    .when('/contacta' , {      
+    .when('/contacto' , {      
         templateUrl: 'vista/contacta.html',
         controller: 'contacta'
     })
