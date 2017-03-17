@@ -11,10 +11,29 @@
             
     </div>
     <div class="col-sm-3" ng-repeat="anuncio in anuncios | filter:busqueda">
-            <div class="block" ng-click="verDetalles($index)">
-                <div class="caption">
-                    <h1>{{anuncio.identificador}} {{anuncio.organizacion-remitente}}</h1><br>
-                       <p>{{anuncio.titulo}}</p>
-                </div>
-            </div>
+            
+        <div class="">
+            <span>{{anuncio.titulo}}</span>
+        </div>
+        
+        <div class="">
+          <span class="">Número de registro</span>
+          <span>{{anuncio.identificador}}{{anuncio.numero-de-registro}}</span>
+        </div>
+        <div class="">
+          <span class="">Documento</span>
+          <span><a ng-href={{anuncio.documento}} class="" target="_blank">Descargar</a></span>
+        </div>
+         <div class="">
+          <span class="">Categoría</span>
+          <span>{{anuncio.categorias.categoria[0].content}}</span>
+        </div>  
+
+
     </div>
+
+
+
+        
+    
+
