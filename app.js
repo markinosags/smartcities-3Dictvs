@@ -46,8 +46,6 @@ miAppAngular.constant('configuracionGlobal' , {
     nombreApp:'3Dictvs',
     subtitulo:'Todas las notificaciones a tu alcance',
     nombreDelSitio:'Anuncios Ayto. Gijón',
-    api_url1: 'data/anuncios.json'
-    
-        
+    api_url1: 'data/anuncios.json'     
 });
 
