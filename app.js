@@ -15,8 +15,8 @@ miAppAngular.config( [ '$routeProvider' , function($routeProvider){
         controller: 'servicios'
     })
     .when('/contacto' , {      
-        templateUrl: 'vista/contacta.html',
-        controller: 'contacta'
+        templateUrl: 'vista/contacto.html',
+        controller: 'contacto'
     })
     .when('/opendata' , {      
         templateUrl: 'vista/opendata.html',
@@ -36,7 +36,7 @@ miAppAngular.config( [ '$routeProvider' , function($routeProvider){
         controller: 'inicio'
     })
     .otherwise({        
-        redirectTo: '/404'        
+        redirectTo: '#/404'        
     })
     
 }]);

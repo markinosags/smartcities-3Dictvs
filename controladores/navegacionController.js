@@ -1,6 +1,5 @@
-miAppAngular.controller('navegacionController', function($scope , configuracionGlobal ){
+miAppAngular.controller('navegacionController', "$scope", function($scope, configuracionGlobal ){
      
-     
-     $scope.config =  configuracionGlobal;
+    $scope.config =  configuracionGlobal;
      
 });
