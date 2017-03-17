@@ -8,7 +8,7 @@ miAppAngular.config( [ '$routeProvider' , function($routeProvider){
     })
     .when('/quienes-somos' , {      
         templateUrl: 'vista/quienes-somos.html',
-        controller: 'quienes'
+        controller: 'quienes-somos'
     })
     .when('/servicios' , {      
         templateUrl: 'vista/servicios.html',
@@ -24,7 +24,7 @@ miAppAngular.config( [ '$routeProvider' , function($routeProvider){
     })
     .when('/detalles/:identificador', {
         templateUrl: 'vista/detalles.html',
-        controller: 'detalles'  
+        controller: 'inicio'  
     })
     .when('/inicio', {
         templateUrl: 'vista/inicio.html',

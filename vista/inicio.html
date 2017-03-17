@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <h1>{{titulo}}</h1>
-<div ng-hide="anuncios">
+<!--<div ng-hide="anuncios">
     <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
     <span class="sr-only">Loading...</span>
-</div>
+</div>-->
 
     <div class="col-sm-10">
         <input type="text" ng-model="busqueda" placeholder="Buscar..." class="form-control" ><br>
@@ -10,7 +11,7 @@
             
     </div>
     <div class="col-sm-3" ng-repeat="anuncio in anuncios | filter:busqueda">
-            <div class="block" ng-click="verDetalles(anuncio.identificador)">
+            <div class="block" ng-click="verDetalles($index)">
                 <div class="caption">
                     <h1>{{anuncio.identificador}} {{anuncio.organizacion-remitente}}</h1><br>
                        <p>{{anuncio.titulo}}</p>
