@@ -6,10 +6,6 @@ miAppAngular.config( [ '$routeProvider' , function($routeProvider){
         templateUrl: 'vista/home.html',
         controller: 'home'
     })
-    .when('/' , {      
-        templateUrl: 'vista/home.html',
-        controller: 'home'
-    })
     .when('/quienes-somos' , {      
         templateUrl: 'vista/quienes-somos.html',
         controller: 'quienes'
@@ -26,14 +22,17 @@ miAppAngular.config( [ '$routeProvider' , function($routeProvider){
         templateUrl: 'vista/opendata.html',
         controller: 'opendata'
     })
+    .when('/detalles/:identificador', {
+        templateUrl: 'vista/detalles.html',
+        controller: 'detalles'  
+    })
+    .when('/inicio' , {      
+        templateUrl: 'vista/inicio.html',
+        controller: 'inicio'
+    })
     .when('/404', {
         templateUrl: 'vista/404.html',
         controller: 'inicio'
-    })
-    .when('/detalles/:identificador', {
-        templateUrl: 'vista/detalles.html',
-        controller: 'detalles'
-        
     })
     .otherwise({        
         redirectTo: '/404'        
@@ -44,8 +43,11 @@ miAppAngular.config( [ '$routeProvider' , function($routeProvider){
 
 miAppAngular.constant('configuracionGlobal' , {
  
+    nombreApp:'3Dictvs',
+    subtitulo:'Todas las notificaciones a tu alcance',
     nombreDelSitio:'Anuncios Ayto. Gijón',
-    api_url1: 'data/anuncios.json',
+    api_url1: 'data/anuncios.json'
+    
         
 });
 

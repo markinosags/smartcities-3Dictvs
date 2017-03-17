@@ -2,7 +2,7 @@
 <html ng-app="navegacion" ng-controller="navegacionController">
 <head>
     <meta charset="utf-8">
-    <title>{{config.nombreDelSitio}}</title>
+    <title>{{config.nombreApp}}</title>
     <meta name="viewport" content="width=device-width">
     <link href="vista/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="vista/css/normalize.css">
@@ -28,12 +28,17 @@
     <script src="controladores/inicio.js"></script>
     <script src="controladores/detalles.js"></script>
     <script src="controladores/navegacionController.js"></script>
+	<script src="controladores/servicios.js"></script>
+    <script src="controladores/quienes-comos.js"></script>
+    <script src="controladores/home.js"></script>
+	<script src="controladores/contacta.js"></script>
+	<script src="controladores/opendata.js"></script>
 </head>
 <body>
     <div class="header-wrapper">
 		<div class="site-name">
-			<h1>{{config.nombreDelSitio}}</h1>
-			<h2>Lorem ipsum dolor sit amet</h2>
+			<h1>{{config.nombreApp}}</h1>
+			<h2><strong>{{config.subtitulo}}</strong></h2>
 		</div>
 	</div>
     <div class="menu">
@@ -46,11 +51,11 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="quienes-somos">Quienes somos</a></li>
-						<li><a href="servicios">Servicios</a></li>
-						<li><a href="opendata">Datos abiertos</a></li>
-						<li><a href="contacto">Contacto</a></li>
+						<li><a href="#/inicio">Inicio</a></li>
+						<li><a href="#/quienes-somos">Quiénes somos</a></li>
+						<li><a href="#/servicios">Servicios</a></li>
+						<li><a href="#/opendata">Datos abiertos</a></li>
+						<li><a href="#/contacto">Contacto</a></li>
 					</ul>
 				</div><!--/.navbar-collapse -->
 			</div>
