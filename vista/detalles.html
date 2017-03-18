@@ -1,14 +1,12 @@
+<!DOCTYPE html>
 <div class="col-sm-8">
-  
-    <h1> Ver datos de {{anuncio.numero-de-registro}}</h1>
-    
-    
-    <label>Titulo</label>
-    <input type="text" ng-model="anuncio.titulo" class="form-control"> <br>
-    <label>URL</label>
-    <input type="text" ng-model="anuncio.url" class="form-control">
-
-    
-    <button ng-click="guardarInfo()"> Guardar </button>
-    
+    <div class="block">
+        <div class="caption">
+            <h1>{{titulo}} {{indice}}</h1>
+            <h1>{{anuncios[indice].identificador}} {{anuncios[indice].send}}</h1><br>
+            <p>{{anuncios[indice].titulo}}</p>
+            <p>{{detalle.titulo}}</p>
+            <p>{{verDetalles.detalle.identificador}}</p>
+        </div>
+    </div>
 </div>

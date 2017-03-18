@@ -1,11 +1,11 @@
 miAppAngular.controller('detalles', function($scope, $http, $routeParams, configuracionGlobal, $location){
     
-    $http.get( configuracionGlobal.api_url, {
+    $http.get( configuracionGlobal.api_url1, {
         
         params: { id: $routeParams.identificador }
     })
     .then(function(respuesta){
-        
-        $scope.anuncio = respuesta.data[0];
+        console.log($scope);
+        //$scope.anuncios = respuesta;
     })
 });
