@@ -1,5 +1,4 @@
 var miAppAngular = angular.module('navegacion', ['ngRoute'] );
-
 miAppAngular.config( [ '$routeProvider' , function($routeProvider) {
     
     $routeProvider.when('/' , {      
