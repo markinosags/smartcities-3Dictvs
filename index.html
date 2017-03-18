@@ -1,33 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="navegacion" ng-controller="navegacionController">
 <head>
     <meta charset="utf-8">
-    <title>Anuncios Ayto. Gijón</title>
+    <title>{{config.nombreApp}}</title>
     <meta name="viewport" content="width=device-width">
+    <link href="vista/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="vista/css/normalize.css">
+    <link rel="stylesheet" href="vista/css/component.css">
+    <link rel="stylesheet" href="vista/css/custom-styles.css">
+    <link rel="stylesheet" href="vista/css/font-awesome.css">
+	<link rel="stylesheet" href="vista/css/demo.css">
+    <link rel="stylesheet" href="vista/css/font-awesome-ie7.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-   <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://code.angularjs.org/1.5.0/angular-route.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="vista/js/jquery.mobilemenu.js"></script>
+    <script src="vista/js/html5shiv.js"></script>
+    <script src="vista/js/respond.min.js"></script>
+    <script>
+		$(function(){
+			$('.menu').mobileMenu();
+		});
+    </script>
     <script src="app.js"></script>
     <script src="controladores/inicio.js"></script>
     <script src="controladores/detalles.js"></script>
     <script src="controladores/navegacionController.js"></script>
+	<script src="controladores/servicios.js"></script>
+    <script src="controladores/quienes-comos.js"></script>
+    <script src="controladores/home.js"></script>
+	<script src="controladores/contacta.js"></script>
+	<script src="controladores/opendata.js"></script>
 </head>
-<body ng-app="navegacion">
-    <header class="navbar navbar-default" ng-controller="navegacionController">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#/"> {{config.nombreDelSitio}} </a>
-            </div>
-        </div>
-    </header>
-    <div class="container" ng-view>
+<body>
+    <div class="header-wrapper">
+		<div class="site-name">
+			<h1>{{config.nombreApp}}</h1>
+			<h2><strong>{{config.subtitulo}}</strong></h2>
+		</div>
+	</div>
+    <div class="menu">
+		<div class="navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<i class="fw-icon-th-list"></i>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#/">Inicio</a></li>
+						<li><a href="#/quienes-somos">Quiénes somos</a></li>
+						<li><a href="#/servicios">Servicios</a></li>
+						<li><a href="#/opendata">Datos abiertos</a></li>
+						<li><a href="#/contacto">Contacto</a></li>
+					</ul>
+				</div><!--/.navbar-collapse -->
+			</div>
+		</div>
+		<div class="mini-menu">
+			<label>
+				<select class="selectnav">
+					<option value="#" selected="">Inicio</option>
+					<option value="quienes-somos">Quienes somos</option>
+					<option value="quienes-somos/arturo">→ Arturo</option>
+					<option value="quienes-somos/marco">→ Marco</option>
+					<option value="quienes-somos/miguel">→ Miguel</option>
+					<option value="servicios">Servicios</option>
+					<option value="opendata">Datos abiertos</option>
+					<option value="contacto">Contacto</option>
+				</select>
+			</label>
+		</div>
     </div>
+    <div class="container" ng-view> 
+    </div> 
 </body>
 </html>
