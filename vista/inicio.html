@@ -1,14 +1,46 @@
+<<<<<<< HEAD
 <h1>{{titulo}}</h1>
 <div ng-hide="anuncios">
+=======
+<!DOCTYPE html>
+
+<h1>{{titulo}}</h1>
+<!--<div ng-hide="anuncios">
+>>>>>>> 1629ea9c4172395a9e36d0eec4055ed0eae55af4
     <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
     <span class="sr-only">Loading...</span>
-</div>
+</div>-->
 
     <div class="col-sm-10">
         <input type="text" ng-model="busqueda" placeholder="Buscar..." class="form-control" ><br>
         <!--<p><small> Buscando: {{busqueda}}  </small></p>-->
+<<<<<<< HEAD
+=======
             
     </div>
+    <div class="col-sm-3" ng-repeat="anuncio in anuncios | filter:busqueda">
+>>>>>>> 1629ea9c4172395a9e36d0eec4055ed0eae55af4
+            
+        <div class="">
+            <span>{{anuncio.titulo}}</span>
+        </div>
+        
+        <div class="">
+          <span class="">Número de registro</span>
+          <span>{{anuncio.identificador}}{{anuncio.numero-de-registro}}</span>
+        </div>
+        <div class="">
+          <span class="">Documento</span>
+          <span><a ng-href={{anuncio.documento}} class="" target="_blank">Descargar</a></span>
+        </div>
+         <div class="">
+          <span class="">Categoría</span>
+          <span>{{anuncio.categorias.categoria[0].content}}</span>
+        </div>  
+
+
+    </div>
+<<<<<<< HEAD
     <div class="col-sm-3" ng-repeat="anuncio in anuncios | filter:busqueda">
             <div class="" ng-click="verDetalles(anuncio.identificador)">
                 <div class="content">
@@ -17,3 +49,11 @@
                 </div>
             </div>
     </div>
+=======
+
+
+
+        
+    
+
+>>>>>>> 1629ea9c4172395a9e36d0eec4055ed0eae55af4
