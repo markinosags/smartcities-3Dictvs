@@ -1,40 +1,28 @@
-<!DOCTYPE html>
-
 <h1>{{titulo}}</h1>
 <!--<div ng-hide="anuncios">
     <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
     <span class="sr-only">Loading...</span>
 </div>-->
-
-    <div class="col-sm-10">
-        <input type="text" ng-model="busqueda" placeholder="Buscar..." class="form-control" ><br>
-        <!--<p><small> Buscando: {{busqueda}}  </small></p>-->
-            
-    </div>
-    <div class="col-sm-3" ng-repeat="anuncio in anuncios | filter:busqueda">
-            
-        <div class="">
-            <span>{{anuncio.titulo}}</span>
+<div class="col-sm-12">
+    <input type="text" ng-model="busqueda" placeholder="Buscar..." class="form-control" ><br>
+    <!--<p><small> Buscando: {{busqueda}}  </small></p>-->
+</div>
+<div class="col-md-3" ng-repeat="anuncio in anuncios | filter:busqueda">
+    <div class="block"><div class="thumbnail">
+        <div class="caption">
+            <h1> {{anuncio.numero-de-registro != 0 ? anuncio.numero-de-registro : anuncio.identificador }}</h1>
+            <ul class="list-unstyled">
+                <li>
+                    <strong>{{anuncio.titulo}}</strong>
+                    <span>{{anuncio.categorias.categoria[0].content}}</span>
+                    <a class="btn-default" ng-href={{anuncio.documento}}>Descargar</a>
+                </li>
+            </ul>
         </div>
-        
-        <div class="">
-          <span class="">Número de registro</span>
-          <span>{{anuncio.identificador}}{{anuncio.numero-de-registro}}</span>
-        </div>
-        <div class="">
-          <span class="">Documento</span>
-          <span><a ng-href={{anuncio.documento}} class="" target="_blank">Descargar</a></span>
-        </div>
-         <div class="">
-          <span class="">Categoría</span>
-          <span>{{anuncio.categorias.categoria[0].content}}</span>
-        </div>  
-
-
-    </div>
-
-
-
-        
-    
-
+    </div></div>
+</div>
+<script type="text/javascript">
+	$(function() {
+		$(".col-md-3").matchHeight();
+	});
+</script>

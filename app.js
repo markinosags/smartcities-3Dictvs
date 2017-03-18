@@ -30,6 +30,10 @@ miAppAngular.config( [ '$routeProvider' , function($routeProvider) {
         templateUrl: 'vista/inicio.html',
         controller: 'inicio'  
     })
+    .when('/opendata', {
+        templateUrl: 'vista/opendata.html',
+        controller: 'opendata'
+    })
     .when('/404', {
         templateUrl: 'vista/404.html',
         controller: 'inicio'

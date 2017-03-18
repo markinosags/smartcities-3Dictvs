@@ -1,0 +1,1 @@
+miAppAngular.controller('opendata', function($scope) {});

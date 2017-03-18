@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>{{config.nombreApp}}</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="vista/css/bootstrap.css">
     <link rel="stylesheet" href="vista/css/normalize.css">
     <link rel="stylesheet" href="vista/css/component.css">
@@ -13,22 +13,19 @@
     <link rel="stylesheet" href="vista/css/font-awesome-ie7.css">
     <link rel="stylesheet" href="vista/css/3dictvs.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://code.angularjs.org/1.5.0/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.5.0/angular-route.min.js"></script>
 
-    <script src="vista/js/html5shiv.js"></script>
-    <script src="vista/js/respond.min.js"></script>
+    <script type="text/javascript" src="vista/js/html5shiv.js"></script>
+    <script type="text/javascript" src="vista/js/respond.min.js"></script>
+	<script type="text/javascript" src="vista/js/jquery.matchHeight-min.js"></script>
 
-    <script src="app.js"></script>
-    <script src="controladores/inicio.js"></script>
-    <script src="controladores/detalles.js"></script>
-    <script src="controladores/navegacionController.js"></script>
-	<script src="controladores/servicios.js"></script>
-    <script src="controladores/quienes-comos.js"></script>
-    <script src="controladores/home.js"></script>
-	<script src="controladores/contacta.js"></script>
-	<script src="controladores/opendata.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="controladores/inicio.js"></script>
+    <script type="text/javascript" src="controladores/detalles.js"></script>
+    <script type="text/javascript" src="controladores/navegacionController.js"></script>
+	<script type="text/javascript" src="controladores/opendata.js"></script>
 </head>
 <body>
     <div class="header-wrapper">
@@ -37,102 +34,34 @@
 			<h2><strong>{{config.subtitulo}}</strong></h2>
 		</div>
 	</div>
-    <div class="menu">
-		<div class="navbar">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<i class="fw-icon-th-list"></i>
-					</button>
-				</div>
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-						<li><a href="#/">Inicio</a></li>
-						<li><a href="#/quienes-somos">Quiénes somos</a></li>
-						<li><a href="#/servicios">Servicios</a></li>
-						<li><a href="#/opendata">Datos abiertos</a></li>
-						<li><a href="#/contacto">Contacto</a></li>
-					</ul>
-				</div><!--/.navbar-collapse -->
-			</div>
+    <div class="menu"><div class="navbar"><div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<i class="fw-icon-th-list"></i>
+			</button>
 		</div>
-		<div class="mini-menu">
-			<label>
-				<select class="selectnav">
-					<option value="#" selected="">Inicio</option>
-					<option value="quienes-somos">Quienes somos</option>
-					<option value="quienes-somos/arturo">→ Arturo</option>
-					<option value="quienes-somos/marco">→ Marco</option>
-					<option value="quienes-somos/miguel">→ Miguel</option>
-					<option value="servicios">Servicios</option>
-					<option value="opendata">Datos abiertos</option>
-					<option value="contacto">Contacto</option>
-				</select>
-			</label>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="#/">Inicio</a></li>
+				<li><a href="#/opendata">Datos abiertos</a></li>
+			</ul>
 		</div>
-    </div>
+	</div></div></div>
 	<!-- vista principal -->
-    <div class="container" ng-view></div>
+    <div class="featured-block">
+		<div class="container" ng-view>
+	</div>
 	<!-- pie -->
-	<div class="footer-wrapper">
-		<div class="site-content"><div class="container">
-			<div class="row">
-				<div class="block col-md-3 col-sm-9">
-					<h1>Arturo Redondo</h1>
-					<ul>
-						<li><a href="#">Phasellus ultrices</a></li>
-						<li><a href="#">Sed adipiscing lipsum</a></li>
-						<li><a href="#">Nulla sed leoniton</a></li>
-					</ul>
-				</div>
-				<div class="block col-md-3 col-sm-9">
-					<h1>Miguel Fernández</h1>
-					<ul>
-						<li><a href="#">Lorem ipsum</a></li>
-						<li><a href="#">Donec nec justo</a></li>
-						<li><a href="#">Morbi in se</a></li>
-					</ul>
-				</div>
-				<div class="block col-md-3 col-sm-9">
-					<h1>Marco Antonio González</h1>
-					<ul>
-						<li><a href="#">Quisque a lectus</a></li>
-						<li><a href="#">Donec consecte</a></li>
-						<li><a href="#">Nulla sed leoniton</a></li>
-					</ul>
-				</div>
-				<!--
-				<div class="block col-md-3">
-					<h1>Praesent dapibus, neque id cursus faucibus</h1>
-					<div class="input-group">
-						<input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
-						<span class="input-group-btn">
-							<input type="submit" class="button btn btn-default" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
-						</span>
-					</div>
-				</div>-->
-				<div class="block col-md-3">
-					<h1>Redes sociales</h1>
-					<ul class="social">
-						<li><a href="#twitter"><i class="fw-icon-twitter"></i></a></li>
-						<li><a href="#facebook"><i class="fw-icon-facebook"></i></a></li>
-						<li><a href="#linkedin"><i class="fw-icon-linkedin"></i></a></li>
-					</ul>
-				</div>
+	<div class="footer-wrapper"><div class="copy-rights"><div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				Diseño original de: <a href="http://www.alltemplateneeds.com"> www.alltemplateneeds.com</a>
+				<br>&copy; 2017 {{config.nombreApp}}
 			</div>
-		</div></div>
-		<div class="copy-rights">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						Copyright&copy; {{config.nombreApp}}. Diseño original de: <a href="http://www.alltemplateneeds.com"> www.alltemplateneeds.com</a>
-					</div>
-					<div class="col-md-6">
-						Fuente de datos: <a href="http://datos.gijon.es/">Ayuntamiento de Gijón</a> 
-					</div>
-				</div>
+			<div class="col-md-6">
+				Fuente de datos: <a href="http://datos.gijon.es/">Ayuntamiento de Gijón</a> 
 			</div>
 		</div>
-	</div>
+	</div></div></div>
 </body>
 </html>
