@@ -1,0 +1,10 @@
+.thumbnail{
+    display: inline-table;
+    
+}
+
+.caja-anuncio{
+    height: 380px;
+    display: inline-flex;
+    margin-top: 20px;
+}
