@@ -8,3 +8,8 @@
     display: inline-flex;
     margin-top: 20px;
 }
+
+ul.links li {
+    padding-right: 4px;
+    float:left;
+}

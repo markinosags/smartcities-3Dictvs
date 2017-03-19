@@ -13,12 +13,13 @@
   <div class="caja-anuncio">  
     <div class="thumbnail">
         <div class="caption">
-            <h1> {{anuncio.numero-de-registro != 0 ? anuncio.numero-de-registro : anuncio.identificador }}</h1>
+            <h1>{{anuncio.numero-de-registro != 0 ? anuncio.numero-de-registro : anuncio.identificador }}</h1>
             <ul class="list-unstyled">
                 <li><strong>{{anuncio.titulo}}</strong></li>
                 <li><span>{{anuncio.categorias.categoria[0].content}}</span></li>
             </ul>
-            <ul class="list-unstyled">
+            <ul class="list-unstyled links">
+                <li><a class="btn" ng-href=#/detalles/{{$index}}>Ver</a></li>
                 <li><a class="btn" ng-href={{anuncio.documento}} target="_blank">Descargar</a></li>
              </ul>  
         </div>

@@ -9,9 +9,9 @@ miAppAngular.config( [ '$routeProvider' , function($routeProvider) {
         templateUrl: 'vista/inicio.html',
         controller: 'inicio'  
     })
-    .when('/detalles/:identificador', {
+    .when('/detalles/:indice', {
         templateUrl: 'vista/detalles.html',
-        controller: 'inicio'  
+        controller: 'detalles'  
     })
     .when('/opendata', {
         templateUrl: 'vista/opendata.html',

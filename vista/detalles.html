@@ -1,14 +1,12 @@
 <div class="block">
     <div class="caption">
-        <h1>{{titulo}} {{indice}}</h1>
-        <h1>{{anuncios[indice].identificador}} {{anuncios[indice].send}}</h1><br>
-        <p>{{anuncios[indice].titulo}}</p>
-        <p>{{detalle.titulo}}</p>
-        <p>{{verDetalles.detalle.identificador}}</p>
-    </div>
-    <div class="col-sm-8">  
-        <h1> Ver datos de {{anuncios.identificador}}</h1>
-        <label>{{anuncios.titulo}}</label>
-        <label>{{anuncios.url}}</label>
+        <h1>{{anuncio.titulo}}</h1>
+        <h2>{{anuncio.numero-de-registro != 0 ? anuncio.numero-de-registro : anuncio.identificador }}</h2>
+        <span>{{anuncio.send.replace('fecha-actualizacion', '')}}</span>
+        <!-- // Hay que resolver el problema con los - en el nombre de la propiedad JSON
+        <p>{{anuncio.descripcion}}</p>
+        <p>{{anuncio[numero-de-registro]}}</p>
+        <p>{{anuncio[organizacion-remitente]}}</p>-->
+        <p><a href="{{anuncio.url}}">Acceder al anuncio</a></p>
     </div>
 </div>
