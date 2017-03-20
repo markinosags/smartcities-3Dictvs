@@ -1,12 +1,26 @@
 <div class="block">
-    <div class="caption">
-        <h1>{{anuncio.titulo}}</h1>
-        <h2>{{anuncio.numero-de-registro != 0 ? anuncio.numero-de-registro : anuncio.identificador }}</h2>
-        <span>{{anuncio.send.replace('fecha-actualizacion', '')}}</span>
-        <!-- // Hay que resolver el problema con los - en el nombre de la propiedad JSON
-        <p>{{anuncio.descripcion}}</p>
-        <p>{{anuncio[numero-de-registro]}}</p>
-        <p>{{anuncio[organizacion-remitente]}}</p>-->
-        <p><a href="{{anuncio.url}}">Acceder al anuncio</a></p>
-    </div>
+    <div class="col-xs-12">
+        <div class="caption">
+            <ul class="list-unstyled">
+                <li><h2>{{anuncio.numero-de-registro != 0 ? anuncio.numero-de-registro : anuncio.identificador }}</h2></li>
+                <li><h1>{{anuncio.titulo}}</h1></li>
+                <li><h6>{{anuncio.send.replace('fecha-actualizacion', '')}}</h6></li>        
+            </ul>
+        </div>
+        <div class="caption" ng-repeat="categoria in anuncio.categorias">
+            <div  ng-repeat="cat in categoria">
+                {{cat.content}} <br>
+            </div>
+        </div>
+        <div >
+            <div class="caption">
+                <a class="btn" ng-href={{anuncio.documento}} target="_blank">Descargar Documento</a>
+            </div>
+        </div>
+        <div ng-repeat="categoria in anuncio.categorias">
+            <div class="caption">
+                <a class="btn" ng-href=#/inicio/>Volver</a>
+            </div>
+        </div>
+    </div>   
 </div>

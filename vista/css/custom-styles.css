@@ -232,7 +232,7 @@ margin-top: 10px;
 /************************************************
 	Footer styles starts here
  ************************************************/
-.footer-wrapper{background: #3b3e4a;}
+.footer-wrapper{background: #3b3e4a; margin-top: 40px;}
 .site-content{padding: 55px 0; overflow: hidden;}
 .site-content .block h1{font-size: 18px; line-height: 24px; color: #fff; text-transform: uppercase; font-family: 'source_sans_probold'; padding-bottom: 10px;}
 .site-content .block ul{margin: 0; padding: 0;}

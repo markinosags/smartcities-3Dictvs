@@ -4,9 +4,9 @@ miAppAngular.controller('inicio', function($scope , configuracionGlobal , $http 
 	        localStorage.setItem('anuncios', JSON.stringify(respuesta));
 	        $scope.anuncios = respuesta.tablons.tablon;
             $scope.titulo = $scope.anuncios[0].categorias.categoria[0].content;
-            console.log($scope.anuncios[1].numero_de_referencia);
-            console.log($scope.anuncios[1].organizacion_remitente);
-            console.log($scope);
+            //console.log($scope.anuncios[1].numero_de_referencia);
+            //console.log($scope.anuncios[1].organizacion_remitente);
+            //console.log($scope);
 
         
         /*$scope.verDetalles = function(i){

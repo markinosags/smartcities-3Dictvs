@@ -6,6 +6,6 @@ miAppAngular.controller('detalles', function($scope, $http, $routeParams, config
     .then(function(respuesta){
         //console.log(respuesta.data.tablons.tablon[$routeParams.indice]);
         $scope.anuncio = respuesta.data.tablons.tablon[$routeParams.indice];
-        //$scope.anuncios = respuesta;
+        console.log($scope.anuncio);
     })
 });
